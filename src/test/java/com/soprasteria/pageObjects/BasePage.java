@@ -4,7 +4,7 @@ package com.soprasteria.pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public abstract  class BasePage {
+public abstract  class BasePage implements BasePageMethods {
   protected WebDriver driver;
   protected static BasePage gps;
 
@@ -14,7 +14,5 @@ public abstract  class BasePage {
 
   public abstract void go();
 
-  public abstract void performBusinessClickMortgagesAndLoans();
 
-  public abstract void assertVisibleMortgageSimulator();
 }
